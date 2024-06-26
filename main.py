@@ -1,34 +1,34 @@
 import streamlit as st
-import numpy as np
-from PIL import Image
-import torch
-from torch import nn
-import matplotlib.pyplot as plt
-from torchvision import datasets, transforms
-# Function
-collected_img = 0
-model_path = 'model.pth'
-# Neural Network
+# import numpy as np
+# from PIL import Image
+# import torch
+# from torch import nn
+# import matplotlib.pyplot as plt
+# from torchvision import datasets, transforms
+# # Function
+# collected_img = 0
+# model_path = 'model.pth'
+# # Neural Network
 
 
-class PotatoNetwork(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.relu_stack = nn.Sequential(
-            nn.Linear(28*28, 512),
-            nn.ReLU(),
-            nn.Linear(512, 512),
-            nn.ReLU(),
-            nn.Linear(512, 128),
-            nn.ReLU(),
-            nn.Linear(128, 3),
-            nn.ReLU()
-        )
+# class PotatoNetwork(nn.Module):
+#     def __init__(self):
+#         super().__init__()
+#         self.relu_stack = nn.Sequential(
+#             nn.Linear(28*28, 512),
+#             nn.ReLU(),
+#             nn.Linear(512, 512),
+#             nn.ReLU(),
+#             nn.Linear(512, 128),
+#             nn.ReLU(),
+#             nn.Linear(128, 3),
+#             nn.ReLU()
+#         )
 
-    def forward(self, x):
-        x = nn.Flatten()(x)
-        logits = self.relu_stack(x)
-        return logits
+#     def forward(self, x):
+#         x = nn.Flatten()(x)
+#         logits = self.relu_stack(x)
+#         return logits
 
 
 # Header

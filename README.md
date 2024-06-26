@@ -62,3 +62,6 @@ potato-leaf-classifier/
 ├── requirements.txt     # Project dependencies list
 ├── README.md            # Project documentation
 └── models/              # Directory containing the trained model (if applicable)
+```
+## Links
+Streamlit: https://potatoclassifier.streamlit.app/

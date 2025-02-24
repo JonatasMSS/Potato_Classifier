@@ -2,6 +2,8 @@
 
 This is a potato leaf image classifier that analyzes an image of a potato leaf and verifies if it has blight on its leaf.
 
+Link to the training process => https://colab.research.google.com/drive/1CLsvJmSL7myUr1yaUEafFixt90dUlr9V?usp=sharing
+
 ## Classification
 
 When you input the image, the model will return three possible labels:
